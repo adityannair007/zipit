@@ -12,6 +12,7 @@ import {
 } from "@nextui-org/modal";
 import Link from "next/link";
 import { useState } from "react";
+import SignIn from "@/app/components/signin";
 
 const Register = () => {
   const { isOpen, onOpen, onClose, onOpenChange } = useDisclosure();
@@ -24,6 +25,7 @@ const Register = () => {
           <h1 className="text-6xl font-bold text-orange-500">to zipit</h1>
         </div>
         <Card className="flex flex-col md:w-1/2 items-center gap-4 justify-center w-full md:h-1/2 p-4 dark:bg-gray-800">
+          <SignIn />
           <div className="flex justify-between w-10/12 gap-3 items-center">
             <Input
               placeholder="Email"
